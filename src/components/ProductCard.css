@@ -1,0 +1,10 @@
+.products{
+  width: 30%;
+  margin: 10px;
+}
+
+.products img{
+  height: 157px;
+  /* width: 210px; */
+  object-fit: cover;
+}
