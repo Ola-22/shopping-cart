@@ -1,6 +1,6 @@
 const products = [
   {
-    _id: "1",
+    id: "1",
     name: "Sony Camera",
     fastDelivery: false,
     image:
@@ -11,7 +11,7 @@ const products = [
     inStock: 7,
   },
   {
-    _id: "2",
+    id: "2",
     name: "Head Phones",
     fastDelivery: true,
     image:
@@ -22,7 +22,7 @@ const products = [
     inStock: 5,
   },
   {
-    _id: "3",
+    id: "3",
     name: "iPhone",
     fastDelivery: false,
     image:
@@ -33,7 +33,7 @@ const products = [
     inStock: 0,
   },
   {
-    _id: "4",
+    id: "4",
     fastDelivery: true,
     name: "Sony Playstation 5 Controller",
     image:
@@ -44,7 +44,7 @@ const products = [
     inStock: 3,
   },
   {
-    _id: "5",
+    id: "5",
     name: "Laptop",
     fastDelivery: false,
     image:
@@ -55,7 +55,7 @@ const products = [
     inStock: 6,
   },
   {
-    _id: "6",
+    id: "6",
     name: "Apple Watch",
     fastDelivery: false,
     image:
