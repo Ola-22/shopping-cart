@@ -5,14 +5,17 @@ import {
   Nav,
   Dropdown,
   Badge,
+  Button,
 } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
+import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { CartState } from "../context/Context";
 
 export default function Header() {
   const {
     state: { cart },
+    dispatch,
   } = CartState();
 
   return (
@@ -49,8 +52,23 @@ export default function Header() {
                         <span>{product.name}</span>
                         <span>$ {product.price}</span>
                       </div>
+                      <AiFillDelete
+                        fontSize="20px"
+                        style={{ cursor: "pointer" }}
+                        onClick={() =>
+                          dispatch({
+                            type: "REMOVE_FROM_CART",
+                            payload: product,
+                          })
+                        }
+                      />
                     </span>
                   ))}
+                  <Link to="/cart">
+                    <Button style={{ width: "95%", margin: "0 10px" }}>
+                      Go To Cart
+                    </Button>
+                  </Link>
                 </>
               ) : (
                 <span style={{ padding: 10 }}>Cart is Empty!</span>
