@@ -9,6 +9,8 @@ export default function ProductCard({ product }) {
     dispatch,
   } = CartState();
 
+  console.log(cart);
+
   return (
     <div className="products">
       <Card>
