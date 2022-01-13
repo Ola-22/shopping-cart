@@ -15,7 +15,7 @@ export default function Home() {
       <Filters />
       <div className="productContainer">
         {products.map((product) => (
-          <ProductCard product={product} key={product._id} />
+          <ProductCard product={product} key={product.id} />
         ))}
       </div>
     </div>
