@@ -8,7 +8,7 @@ const products = [
 
     price: 89.99,
     rating: 4.5,
-    inStock: 7,
+    inStock: 3,
   },
   {
     id: "2",
@@ -52,7 +52,7 @@ const products = [
 
     price: 49.99,
     rating: 3.5,
-    inStock: 6,
+    inStock: 2,
   },
   {
     id: "6",
@@ -63,7 +63,7 @@ const products = [
 
     price: 29.99,
     rating: 4,
-    inStock: 7,
+    inStock: 1,
   },
 ];
 
