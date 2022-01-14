@@ -38,7 +38,7 @@ export default function Header() {
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge bg="success">{cart.length}</Badge>
             </Dropdown.Toggle>
-            <Dropdown.Menu style={{ minWidth: 370 }}>
+            <Dropdown.Menu align="end" style={{ minWidth: 370 }}>
               {cart.length > 0 ? (
                 <>
                   {cart.map((product) => (
