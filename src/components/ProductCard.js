@@ -24,7 +24,7 @@ export default function ProductCard({ product }) {
             ) : (
               <div>4 days delivery</div>
             )}
-            <Rating rating={product.ratings} />
+            <Rating rating={product.rating} />
           </Card.Subtitle>
 
           {cart.some((p) => p.id === product.id) ? (
