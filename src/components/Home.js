@@ -18,6 +18,26 @@ export default function Home() {
       );
     }
 
+    if (!byStock) {
+      sortedProducts = sortedProducts.filter((product) => product.inStock);
+    }
+
+    if (byFastDelivery) {
+      sortedProducts = sortedProducts.filter((product) => product.fastDelivery);
+    }
+
+    if (byRating) {
+      sortedProducts = sortedProducts.filter(
+        (product) => product.rating >= byRating
+      );
+    }
+
+    if (searchQuery) {
+      sortedProducts = sortedProducts.filter((product) =>
+        product.name.toLowerCase().includes(searchQuery)
+      );
+    }
+
     return sortedProducts;
   };
   return (
