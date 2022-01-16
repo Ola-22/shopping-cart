@@ -1,3 +1,9 @@
 .summary{
   width: 30% !important;
 }
+
+@media (max-width: 771px) {
+  .search {
+    display: none !important;
+  }
+}
