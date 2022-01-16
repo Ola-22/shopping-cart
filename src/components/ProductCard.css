@@ -5,6 +5,12 @@
 
 .products img{
   height: 157px;
-  /* width: 210px; */
   object-fit: cover;
+}
+
+
+@media (max-width: 771px) {
+  .products{
+    width: 100%;
+  }
 }
